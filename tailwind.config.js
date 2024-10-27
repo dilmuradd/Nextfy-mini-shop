@@ -10,6 +10,8 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        black: '#000000', // Qo'shish
+        white: '#FFFFFF', // Qo'shish
       },
     },
   },

@@ -1,0 +1,1 @@
+export let api = 'https://fakestoreapi.in/api/'
