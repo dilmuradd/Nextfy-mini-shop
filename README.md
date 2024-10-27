@@ -6,7 +6,6 @@ Nextfy bu kichik e-commerce (onlayn do'kon) sayt bo'lib, Next.js va Tailwind CSS
 
 - 🔍 Mahsulotlarni qidirish va filtr qilish
 - 🛒 Mahsulotlarni savatga qo'shish
-- 📦 Buyurtma berish va to'lov jarayoni
 - 📱 Moslashuvchan dizayn (responsive design)
 - 💡 Oson va tushunarli interfeys
 
