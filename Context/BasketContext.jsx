@@ -20,12 +20,12 @@ export let BasketProvider = ({ children }) => {
     });
 
     let BasketGetData = (data) => {
-        // Agar mahsulot basketda mavjud bo'lmasa, yangi qo'shish
+        
         let existingProduct = BasketData.find(idProduct => idProduct.id === data.id);
         if (!existingProduct) {
             setBasketData([{ count: 1, ...data }, ...BasketData]);
         } else {
-            // Agar mavjud bo'lsa, mavjud mahsulotni yangilash
+            
             AddCount(data);
         }
     };
@@ -72,10 +72,10 @@ export let BasketProvider = ({ children }) => {
         }
     };
 
-    let [ProductPrice, setProductPrice] = useState(0); // 0 boshlang'ich qiymat
+    let [ProductPrice, setProductPrice] = useState(0); 
 
     useEffect(() => {
-        let Stoorage = BasketData; // BasketData dan foydalanish
+        let Stoorage = BasketData; 
 
         let AllProductPrice = Stoorage.reduce((a, b) => a + (Number(b.count || 0) * Number(b.price || 0)), 0);
         setProductPrice(AllProductPrice);

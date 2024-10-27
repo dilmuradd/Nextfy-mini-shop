@@ -86,7 +86,7 @@ let {BasketData,setBasketData,BasketGetData} = useContext(BasketContext)
 
       <h1 className={`text-center font-bold text-[32px]  mt-[20px] ${isHandleTheme ? 'text-white' : 'text-black'} `}>Mahsulotlar</h1>
     {!isSkleton ?
-<div className="grid grid-cols-3 sm:px-[100px] gap-5">
+<div className="grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3 sm:px-[100px] gap-5">
 <Skeleton  rounded={'30px'} h={'400px'} w={'100%'} />
 <Skeleton  rounded={'30px'} h={'400px'} w={'100%'} />
 <Skeleton  rounded={'30px'} h={'400px'} w={'100%'} />
